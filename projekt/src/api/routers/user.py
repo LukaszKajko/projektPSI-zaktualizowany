@@ -17,24 +17,14 @@ router = APIRouter()
 async def register_user(
     user: UserIn,
     service: IUserService = Depends(Provide[Container.user_service]),
-) -> dict:
-    """A router coroutine for registering new user
-
-    Args:
-        user (UserIn): The user input data.
-        service (IUserService, optional): The injected user service.
-
-    Returns:
-        dict: The user DTO details.
-    """
-
-    if new_user := await service.register_user(user):
-        return UserDTO(**dict(new_user)).model_dump()
-
-    raise HTTPException(
-        status_code=400,
-        detail="The user with provided e-mail already exists",
-    )
+) -> UserDTO:
+    new_user = await service.register_user(user)
+    if not new_user:
+        raise HTTPException(
+            status_code=400,
+            detail="The user with provided e-mail already exists",
+        )
+    return new_user
 
 
 @router.post("/token", response_model=TokenDTO, status_code=200)
@@ -42,22 +32,11 @@ async def register_user(
 async def authenticate_user(
     user: UserIn,
     service: IUserService = Depends(Provide[Container.user_service]),
-) -> dict:
-    """A router coroutine for authenticating users.
-
-    Args:
-        user (UserIn): The user input data.
-        service (IUserService, optional): The injected user service.
-
-    Returns:
-        dict: The token DTO details.
-    """
-
-    if token_details := await service.authenticate_user(user):
-        print("user confirmed")
-        return token_details.model_dump()
-
-    raise HTTPException(
-        status_code=401,
-        detail="Provided incorrect credentials",
-    )
+) -> TokenDTO:
+    token_details = await service.authenticate_user(user)
+    if not token_details:
+        raise HTTPException(
+            status_code=401,
+            detail="Provided incorrect credentials",
+        )
+    return token_details

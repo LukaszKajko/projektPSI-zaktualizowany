@@ -1,0 +1,132 @@
+{
+  "club_id": 0,
+  "name": "Wisła Płock",
+  "place_id": 1,
+  "amount_of_points": 30
+}
+{
+  "club_id": 0,
+  "name": "Górnik Zabrze",
+  "place_id": 2,
+  "amount_of_points": 30
+}
+{
+  "club_id": 0,
+  "name": "Jagiellonia Białystok",
+  "place_id": 3,
+  "amount_of_points": 29
+}
+{
+  "club_id": 0,
+  "name": "Raków Częstochowa",
+  "place_id": 4,
+  "amount_of_points": 29
+}
+{
+  "club_id": 0,
+  "name": "Zagłębie Lubin",
+  "place_id": 5,
+  "amount_of_points": 28
+}
+{
+  "club_id": 0,
+  "name": "Cracovia",
+  "place_id": 6,
+  "amount_of_points": 27
+}
+{
+  "club_id": 0,
+  "name": "Radomiak",
+  "place_id": 7,
+  "amount_of_points": 26
+}
+{
+  "club_id": 0,
+  "name": "Lech Poznań",
+  "place_id": 8,
+  "amount_of_points": 26
+}
+{
+  "club_id": 0,
+  "name": "Korona Kielce",
+  "place_id": 9,
+  "amount_of_points": 24
+}
+{
+  "club_id": 0,
+  "name": "Korona Kielce",
+  "place_id": 9,
+  "amount_of_points": 24
+}
+{
+  "club_id": 0,
+  "name": "Motor Lublin",
+  "place_id": 11,
+  "amount_of_points": 21
+}
+{
+  "club_id": 0,
+  "name": "Arka",
+  "place_id": 12,
+  "amount_of_points": 21
+}
+{
+  "club_id": 0,
+  "name": "Lechia",
+  "place_id": 13,
+  "amount_of_points": 20
+}
+{
+  "club_id": 0,
+  "name": "Piast",
+  "place_id": 14,
+  "amount_of_points": 20
+}
+{
+  "club_id": 0,
+  "name": "Widzew Łódź",
+  "place_id": 15,
+  "amount_of_points": 20
+}
+{
+  "club_id": 0,
+  "name": "GKS Katowice",
+  "place_id": 16,
+  "amount_of_points": 20
+}
+{
+  "club_id": 0,
+  "name": "Legia Warszawa",
+  "place_id": 17,
+  "amount_of_points": 19
+}
+{
+  "club_id": 0,
+  "name": "Bruk-Bet Termalica",
+  "place_id": 18,
+  "amount_of_points": 19
+}
+
+
+{
+  "name": "Stadion im. Kazimierza Górskiego w Płocku",
+  "club_id": 1,
+  "seats": 15000,
+  "price": 50.00,
+  "draft": "Wisła Płock - Legia Warszawa"
+}
+{
+    "stadium_id": 2,
+    "name": "Stadion im. Ernesta Pohla w Zabrzu",
+    "club_id": 2,
+    "seats": 31000,
+    "price": "45.00",
+    "draft": "Górnik Zabrze - Termalica Bruk-Bet"
+}
+{
+  "name": "Stadion Miejski w Białymstoku",
+  "club_id": 3,
+  "seats": 15000,
+  "price": 60.00,
+  "draft": "Jagiellonia Białystok - Arka Gdynia"
+}
